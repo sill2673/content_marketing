@@ -321,45 +321,6 @@ body {
     color: #5c5c5c;
 }
 
-.container1 {
-    padding-bottom: 90px;
-}
-
-.accordion {
-    background-color: #ffe6b7;
-    color: #7b7b7b;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: 0.5;
-    outline: none;
-    transition: 0.4s;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: #3F4537;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion:after {
-    content: "+";
-    font-size: 1.2rem;
-    float: right;
-    margin-left: 5px;
-    color: white;
-}
-
-.active:after {
-    content: "-";
-    color: white;
-}
 
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
