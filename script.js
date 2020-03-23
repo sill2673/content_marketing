@@ -1,5 +1,5 @@
 $('.carousel').carousel({
-    interval: 6000
+    interval: 4000
 })
 
 function myFunction(x) {

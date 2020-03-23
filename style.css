@@ -256,9 +256,9 @@ body {
 .nyhed1 img:hover {
     cursor: pointer;
     opacity: 2;
-    /*    background-color: hotpink;*/
-    box-shadow: 0px 10px 20px 3px white;
-}
+    background-color: rgba(217, 217, 217, 0.38);
+/*    box-shadow: 0px 10px 20px 3px white;
+    */}
 
 .nyhed2 {
     padding-bottom: 60px;
@@ -267,8 +267,8 @@ body {
 .nyhed2 img:hover {
     cursor: pointer;
     opacity: 2;
-    /*    background-color: hotpink;*/
-    box-shadow: 0px 10px 20px 3px white;
+    background-color: rgba(217, 217, 217, 0.38);
+/*    box-shadow: 0px 10px 20px 3px white;*/
 }
 
 .nyhed3 {
@@ -278,8 +278,8 @@ body {
 .nyhed3 img:hover {
     cursor: pointer;
     opacity: 2;
-    /*    background-color: hotpink;*/
-    box-shadow: 0px 10px 20px 3px white;
+    background-color: rgba(217, 217, 217, 0.38);
+    /*    box-shadow: 0px 10px 20px 3px white;*/
 }
 
 
@@ -569,8 +569,10 @@ body {
     }
 
     #nyheder {
+        display: flex;
         justify-content: center;
         padding-bottom: 100px;
+        height: 900px;
     }
 
     #nyheder h3 {
@@ -584,8 +586,10 @@ body {
     }
 
     #nyheder img {
-        display: flex;
-        align-items: baseline;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
     }
 
     #ingredienser {
@@ -595,7 +599,7 @@ body {
 
     #kontakt {
         justify-content: center;
-        padding: 200px 0px 200px 0px;
+        padding: 200px 0px 150px 0px;
     }
 
     #kontakt h4 {}
