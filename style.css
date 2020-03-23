@@ -1,0 +1,646 @@
+/* style.css - til dine custom styles */
+
+/**************************************************/
+/* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
+/**************************************************/
+
+import url('https://fonts.googleapis.com/css?family=Open+Sans') h2 {
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    color: #6C6C6C;
+}
+
+h2 {
+    color: #ffe6b7;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #93a582;
+}
+
+h4 {
+    color: #3b3b3b;
+}
+
+h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+
+/*****************/
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    /*    background-color: #cbe3da;*/
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+/*****************/
+
+
+.liste_menu {
+    display: none;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+    z-index: 1;
+
+    /*
+    -webkit-user-select: none;
+    user-select: none;
+*/
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #9b9b9b;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    /*    -webkit-touch-callout: none;*/
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #e0f7ee;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of eq1the screen
+ */
+#menu {
+    position: absolute;
+    width: 100vh;
+    height: 106vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(255, 255, 255, 0.87);
+    list-style-type: none;
+    /*    -webkit-font-smoothing: antialiased;*/
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+
+
+/*****************/
+
+
+
+
+#forside h5 {
+    padding-bottom: 90px;
+}
+
+#forside img {
+    padding: 0px 40px 40px 40px;
+
+}
+
+/*****************/
+
+
+#om {
+    padding: 0px 40px 40px 40px;
+}
+
+#produkter {
+    padding: 0px 40px 40px 40px;
+}
+
+#produkter h2 {
+    padding: 60px 0px 10px 0px;
+}
+
+#produkter h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#carousel {
+    margin: 40px 0px 40px 0px;
+}
+
+#materiale {
+    padding: 90px 40px 90px 40px;
+}
+
+
+#materiale h4 {
+    font-size: 43px;
+    padding: 50px 40px 40px 40px;
+    background-color: rgba(227, 216, 203, 0.69);
+    text-align: center;
+    color: peru;
+}
+
+#nyheder {
+    padding: 0px 40px 40px 40px;
+}
+
+.nyhed1 {
+    padding-bottom: 60px;
+}
+
+.nyhed1 img:hover {
+    cursor: pointer;
+    opacity: 2;
+    /*    background-color: hotpink;*/
+    box-shadow: 0px 10px 20px 3px white;
+}
+
+.nyhed2 {
+    padding-bottom: 60px;
+}
+
+.nyhed2 img:hover {
+    cursor: pointer;
+    opacity: 2;
+    /*    background-color: hotpink;*/
+    box-shadow: 0px 10px 20px 3px white;
+}
+
+.nyhed3 {
+    padding-bottom: 60px;
+}
+
+.nyhed3 img:hover {
+    cursor: pointer;
+    opacity: 2;
+    /*    background-color: hotpink;*/
+    box-shadow: 0px 10px 20px 3px white;
+}
+
+
+#ingredienser {
+    padding: 50px 40px 40px 40px;
+    /*    background-image: url(img/Sk%C3%A6rmbillede%202020-03-21%20kl.%2017.28.35.png);*/
+    height: 530px;
+    /*    background-size: cover;
+    */
+    text-align: center;
+}
+
+#ingredienser h4 {
+    font-size: 50px;
+    background-color: white;
+    color: #f8cde2;
+    padding: 45px;
+}
+
+#kontakt {
+    padding: 40px 40px 60px 40px;
+}
+
+#kontakt h4 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 0px;
+    text-align: center;
+    /*    border-bottom: solid 1px rgba(0, 0, 0, 0.32);*/
+}
+
+.kontakt_tekst_bund {
+    padding-top: 30px;
+}
+
+#kontakt p {
+    line-height: 1;
+    color: #5c5c5c;
+}
+
+.container1 {
+    padding-bottom: 90px;
+}
+
+.accordion {
+    background-color: #ffe6b7;
+    color: #7b7b7b;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 0.5;
+    outline: none;
+    transition: 0.4s;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #3F4537;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: "+";
+    font-size: 1.2rem;
+    float: right;
+    margin-left: 5px;
+    color: white;
+}
+
+.active:after {
+    content: "-";
+    color: white;
+}
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+
+    #forside h5 {
+        padding-bottom: 90px;
+    }
+
+    #forside {
+        padding: 50px 70px 50px 70px;
+    }
+
+    #produkter h2 {
+        text-align: center;
+    }
+
+    #produkter h3 {
+        padding: 20px 0px 5px 0px;
+    }
+
+    #carousel {
+        padding: 0px 50px 0px 50px;
+    }
+
+    #materiale {
+        padding: 40px 40px 60px 40px;
+        justify-content: center;
+    }
+
+    #nyheder {
+        justify-content: center;
+    }
+
+    #nyheder h3 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.61);
+        padding: 10px;
+    }
+
+    #ingredienser {
+        justify-content: center;
+        padding: 40px 40px 60px 40px;
+    }
+
+}
+
+
+/* END "sm-" 576px and up */
+
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+    #forside h5 {
+        padding: 100px 0px 0px 0px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    #forside {
+        padding: 95px 90px 150px 90px;
+    }
+
+    #om {
+        padding: 40px 100px 60px 100px;
+    }
+
+    #produkter {
+        padding: 40px 100px 30px 100px;
+    }
+
+    #produkter h3 {
+        padding: 20px 0px 5px 0px;
+    }
+
+    #carousel {
+        padding: 0px 100px 60px 100px;
+    }
+
+    #materiale {
+        padding: 40px 70px 80px 70px;
+        justify-content: center;
+    }
+
+    #materiale h4 {
+        padding: 70px 50px 50px 50px;
+    }
+
+    #nyheder {
+        justify-content: center;
+        padding: 0;
+    }
+
+    #nyheder h3 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.61);
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    #ingredienser {
+        justify-content: center;
+        padding: 40px 40px 80px 40px;
+    }
+
+    #kontakt {
+        justify-content: center;
+    }
+
+    #kontakt h4 {}
+
+    #kontakt p {
+        margin-left: 60px;
+
+    }
+
+}
+
+
+
+/* END "md-" 768px and up */
+
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+
+    /* END "lg-" 992px and up */
+
+    #forside {
+        padding: 100px 0px 0px 0px;
+    }
+
+    #forside h5 {
+        padding: 180px 0px 0px 0px;
+        font-size: 60px;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #forside img {
+        padding: 0;
+    }
+
+    #om {
+        padding: 200px 200px 100px 200px;
+    }
+
+    #produkter {
+        padding: 40px 200px 30px 200px;
+    }
+
+    #produkter h3 {
+        padding: 20px 0px 5px 0px;
+    }
+
+    #carousel {
+        padding: 0px 100px 100px 100px;
+    }
+
+    #materiale {
+        padding: 40px 220px 170px 220px;
+        justify-content: center;
+    }
+
+    #materiale h4 {
+        padding: 80px 40px 80px 40px;
+    }
+
+    #nyheder {
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    #nyheder h3 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.61);
+        padding: 15px;
+    }
+
+    #nyheder p {
+        padding: 30px 10px 30px 10px;
+    }
+
+    #ingredienser {
+        justify-content: center;
+        padding: 40px 150px 80px 150px;
+    }
+
+    #kontakt {
+        justify-content: center;
+        padding: 200px 0px 200px 0px;
+    }
+
+    #kontakt h4 {}
+
+    #kontakt p {
+        margin-left: 60px;
+    }
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+
+    /* END "xl-" 1200px and up */
+
+    #forside {
+        padding: 20px 0px 0px 0px;
+    }
+
+    #forside h5 {
+        padding: 395px 0px 0px 0px;
+        font-size: 70px;
+        justify-content: center;
+    }
+
+    #om {
+        padding: 200px 200px 100px 200px;
+    }
+
+    #produkter {
+        padding: 40px 200px 30px 200px;
+    }
+
+    #produkter h3 {
+        padding: 20px 0px 5px 0px;
+    }
+
+    #carousel {
+        padding: 0px 100px 100px 100px;
+    }
+
+    #materiale {
+        padding: 40px 300px 170px 300px;
+        justify-content: center;
+    }
+
+    #materiale h4 {
+        padding: 80px 40px 80px 40px;
+    }
+
+    #nyheder {
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    #nyheder h3 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.61);
+        padding: 40px;
+    }
+
+    #nyheder p {
+        padding: 30px 10px 30px 10px;
+    }
+
+    #nyheder img {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #ingredienser {
+        justify-content: center;
+        padding: 40px 240px 80px 240px;
+    }
+
+    #kontakt {
+        justify-content: center;
+        padding: 200px 0px 200px 0px;
+    }
+
+    #kontakt h4 {}
+
+    #kontakt p {
+        margin-left: 60px;
+    }
+}
+}
