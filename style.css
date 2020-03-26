@@ -345,19 +345,32 @@ body {
 
 /**/
 
-@media only screen and (max-width: 476px) {
+@media (min-width: 420px) {
     #ingredienser h4 {
         width: 100%;
-        height: 400px;
-        font-size: 40px;
-        line-height: 60px;
+        height: 330px;
+        font-size: 30px;
+        line-height: 46px;
     }
 
     #materiale h4 {
         width: 100%;
-        height: 400px;
-        font-size: 33px;
-        line-height: 70px;
+        height: 330px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    h5 {
+        font-size: 37px;
+        width: 100%;
+    }
+
+    #kontakt h4 {
+        font-size: 45px;
+    }
+
+    #kontakt p {
+        font-size: 15px;
     }
 }
 
@@ -370,7 +383,7 @@ body {
 @media (min-width: 576px) {
 
     #forside h5 {
-        padding-bottom: 90px;
+        padding-bottom: 110px;
     }
 
     #forside {
@@ -431,7 +444,7 @@ body {
     }
 
     #forside {
-        padding: 95px 90px 150px 90px;
+        padding: 95px 90px 160px 90px;
     }
 
     #om {
