@@ -260,6 +260,15 @@ body {
     padding: 0px 40px 40px 40px;
 }
 
+#nyheder h3 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#nyheder img {
+    margin-top: 50px;
+}
+
 .nyhed1 {
     padding-bottom: 60px;
 }
@@ -334,6 +343,27 @@ body {
 }
 
 
+/**/
+
+@media only screen and (max-width: 476px) {
+    #ingredienser h4 {
+        width: 100%;
+        height: 400px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #materiale h4 {
+        width: 100%;
+        height: 400px;
+        font-size: 33px;
+        line-height: 70px;
+    }
+}
+
+
+
+
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
@@ -372,6 +402,11 @@ body {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.61);
         padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    #nyheder img {
+        margin-top: 40px;
     }
 
     #ingredienser {
@@ -449,7 +484,6 @@ body {
 
     #kontakt p {
         margin-left: 60px;
-
     }
 
 }
