@@ -46,3 +46,6 @@ ScrollReveal().reveal('#ingredienser', {
 ScrollReveal().reveal('#kontakt', {
     delay: 500
 });
+ScrollReveal().reveal('#infografik', {
+    delay: 500
+});
