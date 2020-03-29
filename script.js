@@ -13,6 +13,48 @@ $(window).on("load", function (e) {
 //    console.log("pre");
 
 
+/*****   *****/
+
+//$(document).ready(function () {
+//    $("#hide").click(function () {
+//        $("#infografik").hide();
+//    });
+//    $("#show").click(function () {
+//        $("#infografik").show();
+//    });
+//});
+
+//function myFunction() {
+//    document.getElementById("infografik").style.display = "block";
+//}
+
+
+
+$(function () {
+    var fbslide = 0;
+    $(".fb-news-toggle-button").click(function () {
+        //alert(fbslide);
+        if (fbslide == 0) {
+            $(".iframe-from-fb").animate({
+                left: "0px"
+            }, 500);
+            $(".fb-news-toggle-button").animate({
+                marginLeft: "340px"
+            }, 500);
+            fbslide = 1;
+        } else {
+            $(".iframe-from-fb").animate({
+                left: "-940px"
+            }, 500);
+            $(".fb-news-toggle-button").animate({
+                marginLeft: "0px"
+            }, 500);
+            fbslide = 0;
+        }
+    });
+});
+
+
 ScrollReveal().reveal('#om', {
     delay: 900
 });

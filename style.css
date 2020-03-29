@@ -217,7 +217,7 @@ body {
 }
 
 #forside img {
-    padding: 0px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
 
 }
 
@@ -225,12 +225,34 @@ body {
 
 
 #om {
-    padding: 0px 40px 40px 40px;
+    padding: 0px 40px 650px 40px;
 }
 
 
 #infografik img {
     width: 100%;
+}
+
+.iframe-from-fb img {
+    width: 340px;
+}
+
+aside.iframe-from-fb {
+    height: 500px;
+    display: block;
+    position: absolute;
+    padding-left: 1rem;
+    top: 200vh;
+    height: 90vh;
+    width: 330px;
+    left: -940px;
+}
+
+.fb-news-toggle-button {
+    height: 150px;
+    position: absolute;
+    cursor: pointer;
+    top: 225vh;
 }
 
 #produkter {
@@ -394,7 +416,34 @@ body {
     }
 
     #forside {
-        padding: 50px 70px 50px 70px;
+        padding: 10px 20px 50px 20px;
+    }
+
+    #om {
+        padding: 0px 40px 650px 40px;
+
+    }
+
+    .iframe-from-fb img {
+        width: 390px;
+    }
+
+    aside.iframe-from-fb {
+        height: 500px;
+        display: block;
+        position: absolute;
+        padding-left: 1rem;
+        top: 185vh;
+        height: 90vh;
+        width: 330px;
+        left: -940px;
+    }
+
+    .fb-news-toggle-button {
+        height: 150px;
+        position: absolute;
+        cursor: pointer;
+        top: 210vh;
     }
 
     #produkter h2 {
@@ -451,11 +500,33 @@ body {
     }
 
     #forside {
-        padding: 95px 90px 160px 90px;
+        padding: 50px 90px 160px 90px;
     }
 
     #om {
-        padding: 40px 100px 60px 100px;
+        padding: 40px 100px 550px 100px;
+    }
+
+    .iframe-from-fb img {
+        width: 390px;
+    }
+
+    aside.iframe-from-fb {
+        height: 500px;
+        display: block;
+        position: absolute;
+        padding-left: 1rem;
+        top: 240vh;
+        height: 90vh;
+        width: 330px;
+        left: -940px;
+    }
+
+    .fb-news-toggle-button {
+        height: 150px;
+        position: absolute;
+        cursor: pointer;
+        top: 270vh;
     }
 
     #produkter {
@@ -536,7 +607,30 @@ body {
     }
 
     #om {
-        padding: 200px 200px 100px 200px;
+        padding: 200px 200px 630px 200px;
+    }
+
+    .iframe-from-fb img {
+        width: 420px;
+    }
+
+    aside.iframe-from-fb {
+        height: 500px;
+        display: block;
+        position: absolute;
+        padding-left: 1rem;
+        top: 195vh;
+        height: 90vh;
+        width: 330px;
+        left: -940px;
+    }
+
+    .fb-news-toggle-button {
+        height: 150px;
+        position: absolute;
+        cursor: pointer;
+        top: 225vh;
+        left: 100px;
     }
 
     #produkter {
@@ -610,7 +704,30 @@ body {
     }
 
     #om {
-        padding: 200px 200px 100px 200px;
+        padding: 200px 200px 630px 200px;
+    }
+
+    .iframe-from-fb img {
+        width: 420px;
+    }
+
+    aside.iframe-from-fb {
+        height: 500px;
+        display: block;
+        position: absolute;
+        padding-left: 1rem;
+        top: 185vh;
+        height: 90vh;
+        width: 330px;
+        left: -940px;
+    }
+
+    .fb-news-toggle-button {
+        height: 150px;
+        position: absolute;
+        cursor: pointer;
+        top: 220vh;
+        left: 100px;
     }
 
     #om h2 {
